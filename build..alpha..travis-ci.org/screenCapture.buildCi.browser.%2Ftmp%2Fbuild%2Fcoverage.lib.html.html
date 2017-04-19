@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-pify/pify/index.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-pify/node_modules/pify/index.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,7 +192,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-pify">npmtest-pify (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-pify/pify/index.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-pify/node_modules/pify/index.js</span></h1>
     <h2>
         
         Statements: <span class="metric">8.33% <small>(3 / 36)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -210,11 +208,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-pify/pify/</a> &#187; index.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-pify/node_modules/pify/</a> » index.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -354,78 +352,79 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
 &nbsp;
-var processFn = <span class="fstat-no" title="function not covered" >function (fn, P, opts) {</span>
-<span class="cstat-no" title="statement not covered" >	return <span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >		var that = this;</span>
-<span class="cstat-no" title="statement not covered" >		var args = new Array(arguments.length);</span>
+var processFn = <span class="fstat-no" title="function not covered">function (fn, P, opts) {</span>
+<span class="cstat-no" title="statement not covered">	return <span class="fstat-no" title="function not covered">function () {</span></span>
+<span class="cstat-no" title="statement not covered">		var that = this;</span>
+<span class="cstat-no" title="statement not covered">		var args = new Array(arguments.length);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >		for (var i = 0; i &lt; arguments.length; i++) {</span>
-<span class="cstat-no" title="statement not covered" >			args[i] = arguments[i];</span>
+<span class="cstat-no" title="statement not covered">		for (var i = 0; i &lt; arguments.length; i++) {</span>
+<span class="cstat-no" title="statement not covered">			args[i] = arguments[i];</span>
 		}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >		return new P(<span class="fstat-no" title="function not covered" >function (resolve, reject) {</span></span>
-<span class="cstat-no" title="statement not covered" >			args.push(<span class="fstat-no" title="function not covered" >function (err, result) {</span></span>
-<span class="cstat-no" title="statement not covered" >				if (err) {</span>
-<span class="cstat-no" title="statement not covered" >					reject(err);</span>
-				} else <span class="cstat-no" title="statement not covered" >if (opts.multiArgs) {</span>
-<span class="cstat-no" title="statement not covered" >					var results = new Array(arguments.length - 1);</span>
+<span class="cstat-no" title="statement not covered">		return new P(<span class="fstat-no" title="function not covered">function (resolve, reject) {</span></span>
+<span class="cstat-no" title="statement not covered">			args.push(<span class="fstat-no" title="function not covered">function (err, result) {</span></span>
+<span class="cstat-no" title="statement not covered">				if (err) {</span>
+<span class="cstat-no" title="statement not covered">					reject(err);</span>
+				} else <span class="cstat-no" title="statement not covered">if (opts.multiArgs) {</span>
+<span class="cstat-no" title="statement not covered">					var results = new Array(arguments.length - 1);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >					for (var i = 1; i &lt; arguments.length; i++) {</span>
-<span class="cstat-no" title="statement not covered" >						results[i - 1] = arguments[i];</span>
+<span class="cstat-no" title="statement not covered">					for (var i = 1; i &lt; arguments.length; i++) {</span>
+<span class="cstat-no" title="statement not covered">						results[i - 1] = arguments[i];</span>
 					}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >					resolve(results);</span>
+<span class="cstat-no" title="statement not covered">					resolve(results);</span>
 				} else {
-<span class="cstat-no" title="statement not covered" >					resolve(result);</span>
+<span class="cstat-no" title="statement not covered">					resolve(result);</span>
 				}
 			});
 &nbsp;
-<span class="cstat-no" title="statement not covered" >			fn.apply(that, args);</span>
+<span class="cstat-no" title="statement not covered">			fn.apply(that, args);</span>
 		});
 	};
 };
 &nbsp;
-var pify = module.exports = <span class="fstat-no" title="function not covered" >function (obj, P, opts) {</span>
-<span class="cstat-no" title="statement not covered" >	if (typeof P !== 'function') {</span>
-<span class="cstat-no" title="statement not covered" >		opts = P;</span>
-<span class="cstat-no" title="statement not covered" >		P = Promise;</span>
+var pify = module.exports = <span class="fstat-no" title="function not covered">function (obj, P, opts) {</span>
+<span class="cstat-no" title="statement not covered">	if (typeof P !== 'function') {</span>
+<span class="cstat-no" title="statement not covered">		opts = P;</span>
+<span class="cstat-no" title="statement not covered">		P = Promise;</span>
 	}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	opts = opts || {};</span>
-<span class="cstat-no" title="statement not covered" >	opts.exclude = opts.exclude || [/.+Sync$/];</span>
+<span class="cstat-no" title="statement not covered">	opts = opts || {};</span>
+<span class="cstat-no" title="statement not covered">	opts.exclude = opts.exclude || [/.+Sync$/];</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	var filter = <span class="fstat-no" title="function not covered" >function (key) {</span></span>
-<span class="cstat-no" title="statement not covered" >		var match = <span class="fstat-no" title="function not covered" >function (pattern) {</span></span>
-<span class="cstat-no" title="statement not covered" >			return typeof pattern === 'string' ? key === pattern : pattern.test(key);</span>
+<span class="cstat-no" title="statement not covered">	var filter = <span class="fstat-no" title="function not covered">function (key) {</span></span>
+<span class="cstat-no" title="statement not covered">		var match = <span class="fstat-no" title="function not covered">function (pattern) {</span></span>
+<span class="cstat-no" title="statement not covered">			return typeof pattern === 'string' ? key === pattern : pattern.test(key);</span>
 		};
 &nbsp;
-<span class="cstat-no" title="statement not covered" >		return opts.include ? opts.include.some(match) : !opts.exclude.some(match);</span>
+<span class="cstat-no" title="statement not covered">		return opts.include ? opts.include.some(match) : !opts.exclude.some(match);</span>
 	};
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	var ret = typeof obj === 'function' ? <span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >		if (opts.excludeMain) {</span>
-<span class="cstat-no" title="statement not covered" >			return obj.apply(this, arguments);</span>
+<span class="cstat-no" title="statement not covered">	var ret = typeof obj === 'function' ? <span class="fstat-no" title="function not covered">function () {</span></span>
+<span class="cstat-no" title="statement not covered">		if (opts.excludeMain) {</span>
+<span class="cstat-no" title="statement not covered">			return obj.apply(this, arguments);</span>
 		}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >		return processFn(obj, P, opts).apply(this, arguments);</span>
+<span class="cstat-no" title="statement not covered">		return processFn(obj, P, opts).apply(this, arguments);</span>
 	} : {};
 &nbsp;
-<span class="cstat-no" title="statement not covered" >	return Object.keys(obj).reduce(<span class="fstat-no" title="function not covered" >function (ret, key) {</span></span>
-<span class="cstat-no" title="statement not covered" >		var x = obj[key];</span>
+<span class="cstat-no" title="statement not covered">	return Object.keys(obj).reduce(<span class="fstat-no" title="function not covered">function (ret, key) {</span></span>
+<span class="cstat-no" title="statement not covered">		var x = obj[key];</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >		ret[key] = typeof x === 'function' &amp;&amp; filter(key) ? processFn(x, P, opts) : x;</span>
+<span class="cstat-no" title="statement not covered">		ret[key] = typeof x === 'function' &amp;&amp; filter(key) ? processFn(x, P, opts) : x;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >		return ret;</span>
+<span class="cstat-no" title="statement not covered">		return ret;</span>
 	}, ret);
 };
 &nbsp;
 pify.all = pify;
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 19:48:47 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Wed Apr 19 2017 04:24:14 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
